@@ -34,8 +34,7 @@ function Landing (props) {
           color: 'default',
           align: 'center'
         }, [
-          h('i', { className: 'em-svg em-peach' }),
-          h('i', { className: 'em-svg em-cloud' })
+          h('img', { src: 'yip_is_a_platform.png' }),
         ]),
         h(Button, {
           variant: 'raised',
@@ -44,7 +43,7 @@ function Landing (props) {
           className: styles.startButton,
           href: '/onboarding/0'
         }, [
-          'Start A Pub!'
+          'Join the network!'
         ])
       ])
     ])
