@@ -24,7 +24,7 @@ function Server (name, cb) {
     : Logger({ name })
   server.use(logger)
   const log = logger.logger
-  server.set('logger', log) 
+  server.set('logger', log)
 
   server.config = config
   server.configure(configuration())
@@ -46,7 +46,7 @@ function Server (name, cb) {
 
   async function start (cb) {
     const { port, url } = config[name]
-
+    console.log(url, 'url', 'name', name, 'configgguuuuur', config)
     await server.ready
 
     var httpServer = server.listen(port, () => {
