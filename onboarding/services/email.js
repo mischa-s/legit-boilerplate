@@ -31,7 +31,7 @@ const Service = () => ({
         {
           from: from,
           to: `"${user.name}" <${user.email}>`,
-          subject: 'Welcome to ButtCloud!',
+          subject: 'Welcome to the YIP Alumni Network!',
           text: createText({ setupUrl, user }),
           html: createHtml({ assetUrl, log, setupUrl, theme, user })
         }
@@ -51,7 +51,7 @@ function createHtml ({ assetUrl, log, setupUrl, theme, user }) {
           font-size="40px"
           color="${theme.colors.primary.contrastText}"
         >
-          ButtCloud
+          YIP Alumni Network
         </mj-text>
       </mj-column>
     </mj-section>
@@ -61,8 +61,7 @@ function createHtml ({ assetUrl, log, setupUrl, theme, user }) {
       vertical-align="middle"
       background-width="600px"
       background-height="469px"
-      background-url="${assetUrl}/background.svg"
-      background-color="#2a3448"
+      background-color="${theme.colors.greys[1]}"
       padding="100px 0px"
     >
       <mj-text
@@ -86,7 +85,7 @@ function createHtml ({ assetUrl, log, setupUrl, theme, user }) {
         font-weight="900"
         inner-padding="15px 40px"
       >
-        SETUP YOUR PUB
+        JOIN THE NETWORK
       </mj-button>
   </mj-body>
 </mjml>
