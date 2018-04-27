@@ -21,7 +21,7 @@ function Server (name, cb) {
 
   const logger = config.logger
     ? Logger({ logger: config.logger.child({ name }) })
-    : Logger({ name, level: config.log.level })
+    : Logger({ name })
   server.use(logger)
   const log = logger.logger
   server.set('logger', log) 
