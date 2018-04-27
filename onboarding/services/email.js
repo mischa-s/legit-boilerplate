@@ -102,10 +102,10 @@ function createHtml ({ assetUrl, log, setupUrl, theme, user }) {
 
 function createText ({ user, setupUrl }) {
   return `
-Welcome to ButtCloud!
+Welcome to the YIP Alumni Network!
 =====================
 
-[SETUP YOUR PUB](${setupUrl})
+[JOIN THE NETWORK](${setupUrl})
   `
 }
 
@@ -115,4 +115,3 @@ const hooks = {
     create: []
   }
 }
-
