@@ -5,12 +5,12 @@
       "jwt"
     ],
     "jwt": {
-      "audience": "http://butt.nz",
+      "audience": "https://www.yipalumni.network",
       "expiresIn": "100y"
     }
   },
   "mailer": {
-    "from": "hello@buttcloud.org"
+    "from": "hello@yipalumni.network"
   },
   "sql": {
     "migrations": {
