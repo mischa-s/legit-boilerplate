@@ -46,12 +46,13 @@ function Server (name, cb) {
 
   async function start (cb) {
     const { port, url } = config[name]
-    console.log(url, 'url', 'name', name, 'configgguuuuur', config)
+    console.log(url, 'url', 'port', port, 'name', name, 'configgguuuuur', config)
     await server.ready
 
     var httpServer = server.listen(port, () => {
       if (httpServer == null) return
       serverSummary(httpServer, info => {
+        console.log(info, 'info', info, 'port', port, 'url', url)
         log.info(info, `${name} server listening`)
       })()
     })
