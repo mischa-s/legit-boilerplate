@@ -60,25 +60,21 @@ function OnboardingStepStartCompletion (props) {
         ' Hey ',
         name,
         '! ',
-        h('i', { className: 'em-svg em-wave' })
       ]),
        h(Typography, {
         variant: 'body2',
         paragraph: true
       }, [
         'We sent a message ',
-        h('i', { className: 'em-svg em-email' }),
         ' to you at ',
         email,
         ' with a link to join the network.',
-        h('img', { src: 'yip_is_a_platform.png' }),
       ]),
       h(Typography, {
         variant: 'body1',
         paragraph: true
       }, [
         "Can't find the email? ",
-        h('i', { className: 'em-svg em-anguished' }),
         h(Button, {
           variant: 'flat',
           color: 'default',

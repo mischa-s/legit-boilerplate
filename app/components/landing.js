@@ -29,11 +29,7 @@ function Landing (props) {
       h(Paper, {
         className: styles.header
       }, [
-        h(Typography, {
-          variant: 'display4',
-          color: 'default',
-          align: 'center'
-        }, [
+        h('div', [
           h('img', { src: 'yip_is_a_platform.png' }),
         ]),
         h(Button, {
