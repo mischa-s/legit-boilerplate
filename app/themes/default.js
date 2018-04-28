@@ -162,14 +162,14 @@ module.exports = {
   },
   colors: {
     primary: {
-      light: orange[400],
-      main: orange[700],
-      dark: orange[900],
+      light: orange.A200,
+      main: '#F47921',
+      dark: orange[800],
       contrastText: grey[50]
     },
     secondary: {
       light: green[300],
-      main: green[600],
+      main: '#47AB48',
       dark: green[900],
       contrastText: grey[50]
     },
