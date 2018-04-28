@@ -25,7 +25,7 @@ before you start, please
 - install Redis
 
 ```shell
-git clone git@github.com:YIP-Alumni-Map/Network-Map
+https://github.com/YIP-Alumni-Map/Network-Map.git
 cd Network-Map
 npm install
 npm run sql migrate:latest
