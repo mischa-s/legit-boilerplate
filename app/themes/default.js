@@ -12,6 +12,98 @@ module.exports = {
     desktopWide: '90em', // 1440px,
     desktopXL: '120em' // 1920px
   },
+  typography: {
+    fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
+    fontSize: '14px',
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    display4: {
+      fontSize: '112px',
+      fontWeight: 400,
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
+      letterSpacing: '-.04em',
+      lineHeight: 1,
+      color: 'rgba(0, 0, 0, 0.54)'
+    },
+    display3: {
+      fontSize: '56px',
+      fontWeight: 400,
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
+      letterSpacing: '-.02em',
+      lineHeight: 1.35,
+      color: '#000'
+    },
+    display2: {
+      fontSize: '34px',
+      fontWeight: 600,
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: '40px',
+      color: 'rgba(0, 0, 0, 0.54)'
+    },
+    display1: {
+      fontSize: '34px',
+      fontWeight: 400,
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: '40px',
+      color: 'rgba(0, 0, 0, 0.54)'
+    },
+    headline: {
+      fontSize: '24px',
+      fontWeight: 600,
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: '32px',
+      color: 'rgba(0, 0, 0, 0.87)'
+    },
+    title: {
+      fontSize: '24px',
+      fontWeight: 400,
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: 1,
+      color: 'rgba(0, 0, 0, 0.87)'
+    },
+    subheading: {
+      fontSize: '16px',
+      fontWeight: 400,
+      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: 1,
+      color: 'rgba(0, 0, 0, 0.87)'
+    },
+    body2: {
+      fontSize: '16px',
+      fontWeight: 600,
+      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: '20px',
+      color: 'rgba(0, 0, 0, 0.87)'
+    },
+    body1: {
+      fontSize: '16px',
+      fontWeight: 400,
+      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: '20px',
+      color: 'rgba(0, 0, 0, 0.87)'
+    },
+    label: {
+      fontSize: '16px',
+      fontWeight: 400,
+      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: '20px',
+      color: 'rgba(0, 0, 0, 0.54)'
+    },
+    caption: {
+      fontSize: '12px',
+      fontWeight: 400,
+      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
+      lineHeight: 1,
+      color: 'rgba(0, 0, 0, 0.87)'
+    },
+    button: {
+      fontSize: '14px',
+      textTransform: 'uppercase',
+      fontWeight: 600,
+      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif'
+    }
+  },
   space: [
     // http://tachyons.io/docs/layout/spacing/
     '0rem', // [0] SR: to override default allofthespace with noneofthespace
@@ -22,7 +114,9 @@ module.exports = {
     '4rem', // [5]
     '8rem', // [6]
     '16rem', // [7]
-    '32rem' // [8]
+    '32rem', // [8]
+    '64rem', // [9]
+    '128rem' // [10]
   ],
   fontSizes: {
     // typographic scale because

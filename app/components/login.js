@@ -10,7 +10,7 @@ const Typography = require('material-ui/Typography').default
 const Button = require('material-ui/Button').default
 
 const schema = require('../../users/schemas/createUser')
-const styles = require('../styles/step-start')
+const styles = require('../styles/login')
 
 module.exports = compose(
   connectStyles(styles),
@@ -20,9 +20,9 @@ module.exports = compose(
     'doResendOnboardingEmail',
     'selectOnboardingUser'
   ]),
-)(OnboardingStepStart)
+)(LandingForm)
 
-function OnboardingStepStart (props) {
+function LandingForm (props) {
   const {
     styles,
     onboardingUser: user
@@ -111,7 +111,7 @@ function OnboardingStepStartForm (props) {
     handleSubmit,
     doSubmitOnboardingStart: doSubmit
   } = props
-
+  console.log(doSubmit, 'dooo it?')
   return (
     h(Form, {
       onSubmit: doSubmit,
@@ -125,20 +125,10 @@ function OnboardingStepStartForm (props) {
             className: styles.fields
           }, [
             h(Field, {
-              name: 'name',
-              component: TextField,
-              placeholder: 'Ash',
-              label: 'Name',
-              helperText: 'What should we call you?',
-              fullWidth: true,
-              margin: 'normal'
-            }),
-            h(Field, {
               name: 'email',
               component: TextField,
               placeholder: 'ash@example.com',
               label: 'Email',
-              helperText: 'Where should we message you?',
               fullWidth: true,
               margin: 'normal'
             }),
@@ -148,7 +138,7 @@ function OnboardingStepStartForm (props) {
               color: 'primary',
               type: 'submit',
             }, [
-              'Start'
+              "Let's do it!"
             ])
           ])
         ])

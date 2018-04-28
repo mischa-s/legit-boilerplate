@@ -7,9 +7,11 @@ module.exports = {
   fields: ({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    margin: theme.space[3],
   }),
   submitButton: ({ theme }) => ({
+    width: '75%'
   }),
   completion: ({ theme }) => ({
     padding: theme.space[3],
