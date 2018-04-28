@@ -8,7 +8,8 @@ module.exports = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    margin: theme.space[3],
+    minHeight: theme.space[6],
+    justifyContent: 'space-between'
   }),
   submitButton: ({ theme }) => ({
     width: '75%'

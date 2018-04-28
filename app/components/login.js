@@ -118,7 +118,6 @@ function OnboardingStepStartForm (props) {
       validate: validate(schema),
       render: ({ handleSubmit }) => (
         h('form', {
-          className: styles.form,
           onSubmit: handleSubmit
         }, [
           h('div', {
