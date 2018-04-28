@@ -1,5 +1,5 @@
-const purple = require('material-ui/colors/purple').default
-const teal = require('material-ui/colors/teal').default
+const green = require('material-ui/colors/green').default
+const orange = require('material-ui/colors/orange').default
 const grey = require('material-ui/colors/grey').default
 
 module.exports = {
@@ -68,15 +68,15 @@ module.exports = {
   },
   colors: {
     primary: {
-      light: teal[400],
-      main: teal[700],
-      dark: teal[900],
+      light: orange[400],
+      main: orange[700],
+      dark: orange[900],
       contrastText: grey[50]
     },
     secondary: {
-      light: purple[300],
-      main: purple[600],
-      dark: purple[900],
+      light: green[300],
+      main: green[600],
+      dark: green[900],
       contrastText: grey[50]
     },
     greys: [

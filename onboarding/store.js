@@ -116,7 +116,7 @@ module.exports = {
         dispatch({
           type: 'ONBOARDING_SNACKBAR_SET',
           snackbar: {
-            message: `Hey ${name}, we sent you an email at ${email} with a link to continue with ButtCloud!`,
+            message: `Hey ${name}, we sent you an email at ${email} with a link to join the network!`,
             error: false
           }
         })

@@ -62,7 +62,7 @@ function OnboardingStepStartCompletion (props) {
         '! ',
         h('i', { className: 'em-svg em-wave' })
       ]),
-      h(Typography, {
+       h(Typography, {
         variant: 'body2',
         paragraph: true
       }, [
@@ -70,9 +70,8 @@ function OnboardingStepStartCompletion (props) {
         h('i', { className: 'em-svg em-email' }),
         ' to you at ',
         email,
-        ' with a link to continue onto ButtCloud.',
-        h('i', { className: 'em-svg em-peach' }),
-        h('i', { className: 'em-svg em-cloud' })
+        ' with a link to join the network.',
+        h('img', { src: 'yip_is_a_platform.png' }),
       ]),
       h(Typography, {
         variant: 'body1',

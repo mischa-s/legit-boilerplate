@@ -16,8 +16,8 @@ module.exports = {
       opacity: 0.5,
       zIndex: -1,
       backgroundColor: theme.colors.canvas,
-      backgroundImage: 'url("/background.svg")',
-      backgroundRepeat: 'repeat'
+      // backgroundImage: 'url("/background.svg")',
+      // backgroundRepeat: 'repeat'
     }
   }),
   header: ({ theme }) => ({

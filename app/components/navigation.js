@@ -30,7 +30,7 @@ function Navigation (props) {
             component: 'a',
             href: '/'
           }, [
-            'ButtCloud'
+            'YIP Alumni Network'
           ])
         ])
       ])
