@@ -13,14 +13,16 @@ const styles = require('../styles/landing')
 module.exports = compose(
   connectStyles(styles),
   partial(connectStore, [
-    'doUpdateUrl'
+    'doUpdateUrl',
+    'selectOnboardingUser'
   ])
 )(Landing)
 
 function Landing (props) {
   const {
     styles,
-    updateUrl
+    updateUrl,
+    onboardingUser: user
   } = props
 
   return (
@@ -31,7 +33,9 @@ function Landing (props) {
         className: styles.header
       }, [
         h('div', [
-          h('p', 'Login via email'),
+          user
+            ? h('p', 'Email sent!')
+            : h('p', 'Login via email'),
           h('img', { src: 'yip_is_a_platform.png' }),
         ]),
         h(LandingForm)

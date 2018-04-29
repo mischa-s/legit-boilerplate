@@ -9,6 +9,7 @@ const validate = require('redux-form-with-ajv').default
 const Typography = require('material-ui/Typography').default
 const Button = require('material-ui/Button').default
 
+const OnboardingSnackbar = require('../../onboarding/components/onboardingSnackbar')
 const schema = require('../../users/schemas/createUser')
 const styles = require('../styles/login')
 
@@ -18,13 +19,17 @@ module.exports = compose(
     'doSubmitOnboardingStart',
     'doClearOnboardingUser',
     'doResendOnboardingEmail',
-    'selectOnboardingUser'
+    'selectOnboardingUser',
+    'selectOnboardingSnackbar',
+    'doClearOnboardingSnackbar'
   ]),
 )(LandingForm)
 
 function LandingForm (props) {
   const {
     styles,
+    onboardingSnackbar: snackbar,
+    doClearOnboardingSnackbar: doClearSnackbar,
     onboardingUser: user
   } = props
   return (
@@ -33,7 +38,12 @@ function LandingForm (props) {
     }, [
       user
         ? h(LoginEmailSent, props)
-        : h(LoginEmailForm, props)
+        : h(LoginEmailForm, props),
+      h(OnboardingSnackbar, {
+        styles,
+        snackbar,
+        doClearSnackbar
+      })
     ])
   )
 }
@@ -46,14 +56,12 @@ function LoginEmailSent (props) {
     doResendOnboardingEmail
   } = props
 
-  const { id, name, email } = user
+  const { id, email } = user
 
   return (
     h('div', {
       className: styles.completion
     }, [
-      h('p', 'Perfect! We sent an email with a link to join the network to you at: '),
-      h('p', {className: styles.email}, email),
       h('div', {className: styles.bottomButtons}, [
         h('p', "Can't find the email? "),
         h(Button, {

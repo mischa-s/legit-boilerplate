@@ -3,7 +3,7 @@ const { FORM_ERROR } = require('final-form')
 const { merge, partialRight, path, pipe, prop, __ } = require('ramda')
 
 const steps = require('./data/steps')
-const ONBOARDING_USER = 'buttcloud_onboardingUser'
+const ONBOARDING_USER = 'YIP_Alumni_User'
 
 module.exports = {
   name: 'onboarding',
@@ -112,11 +112,11 @@ module.exports = {
           user
         })
 
-        const { name, email } = user
+        const { email } = user
         dispatch({
           type: 'ONBOARDING_SNACKBAR_SET',
           snackbar: {
-            message: `Hey ${name}, we sent you an email at ${email} with a link to join the network!`,
+            message: `Perfect, we sent you an email at ${email} with a link to join the network!`,
             error: false
           }
         })
