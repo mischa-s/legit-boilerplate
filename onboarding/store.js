@@ -164,14 +164,6 @@ module.exports = {
           args: ['/onboarding/0']
         }
       }
-
-      // if authenticated, at least step 1
-      if (isAuthenticated && stepIndex < 1) {
-        return {
-          actionCreator: 'doUpdateUrl',
-          args: ['/onboarding/1']
-        }
-      }
     }
   ),
   reactShouldClearOnboardingUserWhenAuthenticatedUser: createSelector(

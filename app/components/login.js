@@ -27,19 +27,19 @@ function LandingForm (props) {
     styles,
     onboardingUser: user
   } = props
-
+  console.log(user, 'usersrrrsrs')
   return (
     h('div', {
       className: styles.container
     }, [
       user
-        ? h(OnboardingStepStartCompletion, props)
-        : h(OnboardingStepStartForm, props)
+        ? h(LoginEmailSent, props)
+        : h(LoginEmailForm, props)
     ])
   )
 }
 
-function OnboardingStepStartCompletion (props) {
+function LoginEmailSent (props) {
   const {
     styles,
     onboardingUser: user,
@@ -105,7 +105,7 @@ function OnboardingStepStartCompletion (props) {
   }
 }
 
-function OnboardingStepStartForm (props) {
+function LoginEmailForm (props) {
   const {
     styles,
     handleSubmit,
@@ -137,7 +137,7 @@ function OnboardingStepStartForm (props) {
               color: 'primary',
               type: 'submit',
             }, [
-              "Let's do it!"
+              "Let's go!"
             ])
           ])
         ])

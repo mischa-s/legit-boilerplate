@@ -1,10 +1,18 @@
 const steps = [
   {
-    label:  'start',
+    label:  'personal info',
     Component: () => null
   },
   {
-    label:  'setup',
+    label:  'locations',
+    Component: () => null
+  },
+  {
+    label:  'organisations',
+    Component: () => null
+  },
+  {
+    label:  'topics',
     Component: () => null
   },
 ]

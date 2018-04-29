@@ -22,7 +22,7 @@ const Service = () => ({
     const { userId } = options
 
     const user = await users.get(userId)
-    const setupUrl = `${assetUrl}/onboarding/1?token=${encodeURIComponent(user.token)}`
+    const setupUrl = `${assetUrl}/onboarding/0?token=${encodeURIComponent(user.token)}`
 
     await this.workerQueue.enqueue(
       'mailer',
