@@ -27,7 +27,6 @@ function LandingForm (props) {
     styles,
     onboardingUser: user
   } = props
-  console.log(user, 'usersrrrsrs')
   return (
     h('div', {
       className: styles.container
@@ -53,42 +52,17 @@ function LoginEmailSent (props) {
     h('div', {
       className: styles.completion
     }, [
-      h('Typography', {
-        variant: 'body2',
-        paragraph: true
-      }, [
-        ' Hey ',
-        name,
-        '! ',
-      ]),
-       h(Typography, {
-        variant: 'body2',
-        paragraph: true
-      }, [
-        'We sent a message ',
-        ' to you at ',
-        email,
-        ' with a link to join the network.',
-      ]),
-      h(Typography, {
-        variant: 'body1',
-        paragraph: true
-      }, [
-        "Can't find the email? ",
+      h('p', 'Perfect! We sent an email with a link to join the network to you at: '),
+      h('p', {className: styles.email}, email),
+      h('div', {className: styles.bottomButtons}, [
+        h('p', "Can't find the email? "),
         h(Button, {
           color: 'secondary',
-          size: 'small',
           onClick: handleResendEmail
         }, [
           'Resend Email'
         ]),
-      ]),
-      h(Typography, {
-        variant: 'caption',
-        paragraph: true
-      }, [
         h(Button, {
-          size: 'small',
           color: 'secondary',
           onClick: doClearOnboardingUser
         }, [

@@ -1,6 +1,8 @@
 module.exports = {
   container: ({ theme }) => ({
-    padding: theme.space[3]
+    padding: theme.space[3],
+    width: '500px',
+    flexWrap: 'wrap'
   }),
   fields: ({ theme }) => ({
     ...theme.typography.label,
@@ -13,7 +15,16 @@ module.exports = {
     width: '75%',
   }),
   completion: ({ theme }) => ({
-    padding: theme.space[3],
-    textAlign: 'center'
+    ...theme.typography.body1,
+    textAlign: 'left'
+  }),
+  bottomButtons: ({}) => ({
+    display: 'flex',
+    justifyContent: 'space-between'
+  }),
+  email: ({theme: {typography}}) => ({
+    ...typography.body2,
+    display: 'flex',
+    justifyContent: 'center'
   })
 }
