@@ -53,7 +53,7 @@ function LoginEmailSent (props) {
     h('div', {
       className: styles.completion
     }, [
-      h(Typography, {
+      h('Typography', {
         variant: 'body2',
         paragraph: true
       }, [
@@ -76,8 +76,7 @@ function LoginEmailSent (props) {
       }, [
         "Can't find the email? ",
         h(Button, {
-          variant: 'flat',
-          color: 'default',
+          color: 'secondary',
           size: 'small',
           onClick: handleResendEmail
         }, [
@@ -89,9 +88,8 @@ function LoginEmailSent (props) {
         paragraph: true
       }, [
         h(Button, {
-          variant: 'flat',
-          color: 'default',
           size: 'small',
+          color: 'secondary',
           onClick: doClearOnboardingUser
         }, [
           'Start Over'
@@ -130,15 +128,15 @@ function LoginEmailForm (props) {
               label: 'Email',
               fullWidth: true,
               margin: 'normal'
-            }),
-            h(Button, {
-              className: styles.submitButton,
-              variant: 'raised',
-              color: 'primary',
-              type: 'submit',
-            }, [
-              "Let's go!"
-            ])
+            })
+          ]),
+          h(Button, {
+            className: styles.button,
+            variant: 'raised',
+            color: 'primary',
+            type: 'submit',
+          }, [
+            "Let's go!"
           ])
         ])
       )

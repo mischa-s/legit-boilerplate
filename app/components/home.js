@@ -3,7 +3,6 @@ const { compose } = require('recompose')
 const { partial } = require('ramda')
 const { connect: connectStyles } = require('react-fela')
 const { connect: connectStore } = require('redux-bundler-react')
-const Typography = require('material-ui/Typography').default
 const Button = require('material-ui/Button').default
 const Paper = require('material-ui/Paper').default
 

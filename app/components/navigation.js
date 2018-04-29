@@ -24,8 +24,6 @@ function Navigation (props) {
     doSignout,
     isAuthenticated
   } = props
-  console.log(props);
-  console.log(isAuthenticated, 'whattt?')
   return (
     h('div', {
       className: styles.container
@@ -35,10 +33,8 @@ function Navigation (props) {
         color: 'primary'
       }, [
         h(Toolbar, [
-          h(Typography, {
+          h('a', {
             className: styles.title,
-            variant: 'title',
-            component: 'a',
             href: '/'
           }, [
             'YIP Alumni Network'

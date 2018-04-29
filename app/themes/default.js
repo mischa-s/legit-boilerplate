@@ -14,7 +14,7 @@ module.exports = {
   },
   typography: {
     fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif',
-    fontSize: '14px',
+    fontSize: '16px',
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
@@ -35,7 +35,7 @@ module.exports = {
       color: '#000'
     },
     display2: {
-      fontSize: '34px',
+      fontSize: '16px',
       fontWeight: 600,
       fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif',
       lineHeight: '40px',
@@ -101,7 +101,7 @@ module.exports = {
       fontSize: '14px',
       textTransform: 'uppercase',
       fontWeight: 600,
-      fontFamily: '\'Raleway\', \'Helvetica\', \'Arial\', sans-serif'
+      fontFamily: '\'Work Sans\', \'Helvetica\', \'Arial\', sans-serif'
     }
   },
   space: [
@@ -156,11 +156,7 @@ module.exports = {
     //   multiplier ^ (step / interval)
     //   2 ^ (step / 5)
   },
-  fonts: {
-    primary: 'Roboto, sans-serif',
-    logo: ''
-  },
-  colors: {
+  palette: {
     primary: {
       light: orange.A200,
       main: '#F47921',

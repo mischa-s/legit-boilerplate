@@ -5,7 +5,7 @@ module.exports = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.colors.canvas,
+    backgroundColor: theme.palette.canvas,
     minHeight: theme.space[8],
     minWidth: theme.space[8],
   }),

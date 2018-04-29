@@ -2,17 +2,15 @@ module.exports = {
   container: ({ theme }) => ({
     padding: theme.space[3]
   }),
-  // (mw) a form can't do flexbox
-  form: () => ({}),
   fields: ({ theme }) => ({
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    ...theme.typography.label,
     minHeight: theme.space[6],
-    justifyContent: 'space-between'
+    justifyContent: 'space-around',
+    width: '75%',
+    margin: 'auto'
   }),
-  submitButton: ({ theme }) => ({
-    width: '75%'
+  button: () => ({
+    width: '75%',
   }),
   completion: ({ theme }) => ({
     padding: theme.space[3],
